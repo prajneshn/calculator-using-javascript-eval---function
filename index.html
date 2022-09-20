@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    l
+    <style>
+        table{
+            border-collapse: collapse;
+            background-color: gray;
+            box-shadow: 5px 5px black;
+            border-radius: 10px;
+        }
+        
+        td{
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+        }
+        input[type=button]{
+            width: 100%;
+            height: 100%;
+        }
+        input[type=text]{
+            width: 95%;
+            height: 80%;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" name="calf">
+        <table border="2px solid red">
+            <tr><td colspan="4"><input type="text" id="text" name="value1"/></td></tr>
+            <tr>
+                <td><input type="button" value="7" onclick="document.calf.value1.value+='7'"/></td>
+                <td><input type="button" value="8" onclick="document.calf.value1.value+='8'"/></td>
+                <td><input type="button" value="9" onclick="document.calf.value1.value+='9'"/></td>
+                <td><input type="button" value="/" onclick="document.calf.value1.value+='/'"></td>
+            </tr>
+            <tr><td><input type="button" value="4" onclick="document.calf.value1.value+='4'"/></td>
+                <td><input type="button" value="5" onclick="document.calf.value1.value+='5'"/></td>
+                <td><input type="button" value="6" onclick="document.calf.value1.value+='6'"/></td>
+                <td><input type="button" value="*" onclick="document.calf.value1.value+='*'"/></td>
+            </tr>
+            <tr><td><input type="button" value="1" onclick="document.calf.value1.value+='1'"/></td>
+                <td><input type="button" value="2" onclick="document.calf.value1.value+='2'"/></td>
+                <td><input type="button" value="3" onclick="document.calf.value1.value+='3'"/></td>
+                <td><input type="button" value="-" onclick="document.calf.value1.value+='-'"/></td>
+            </tr>
+            <tr><td><input type="button" value="0" onclick="document.calf.value1.value+='0'"/></td>
+                <td><input type="button" value="." onclick="document.calf.value1.value+='.'"/></td>
+                <td><input type="button" value="=" onclick="document.calf.value1.value=eval(document.calf.value1.value)"/></td>
+                <td><input type="button" value="+" onclick="document.calf.value1.value+='+'"/></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="button" value="C" onclick="document.calf.value1.value=''"/>
+                </td>
+                
+            </tr>
+            <script>
+                var a=parseFloat(document.getElementById("text").value);
+                var b=parseFloat(document.getElementById("text").value);
+            </script>
+        </table>
+    </form>
+</body>
+</html>
